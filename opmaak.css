@@ -1,0 +1,518 @@
+body {
+	background-color: #EDEDED;
+	font-family: Proxima Nova;
+	margin: 0;
+}
+
+header {
+	background-color: #2B2B2C;
+	width: 100%;
+	height: 60px;
+}
+
+/* - - - - - - HAMBURGER - - - - - - */
+.hamburger-menu {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 2%;
+  margin-top: 12px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 4px;
+  background-color: #FFFFFF;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -6px);
+  transform: rotate(45deg) translate(-8px, -6px);
+}
+/* - - - - - - HAMBURGER - - - - - - */
+
+
+
+h1 {
+	font-style: bold;
+	font-size: 1.4em;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	margin: 15px;
+}
+
+
+
+/* - - - - - - KLOK - - - - - - */
+.box1 {
+	background-color: #FFFFFF;
+	height: 140px;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 8px 8px 12px #BFBFBF;
+}
+
+.title {
+	margin: 15px;
+	padding-left: 10px;
+}
+
+hr {
+	border: solid;
+	background-color: #EDEDED;
+	color: #FFFFFF;
+	height: 1px;
+	width: 100%;
+	margin-left: -2px;
+}	
+
+.klok {	
+  text-align: center;
+  font-size: 30px; 
+  margin: 10px;
+  margin-left: 18px;
+  display: block;
+  font-family: Proxima Nova;
+  width: 90%;
+}
+/* - - - - - - KLOK - - - - - - */
+
+
+
+/* - - - - - - BOX 2 & BOX 3 - - - - - - */
+.box2, .box3 {
+	background-color: #FFFFFF;
+	height: 230px;
+	border-radius: 5px;
+	padding: 5px;
+	box-shadow: 8px 8px 12px #BFBFBF;
+}
+/* - - - - - - BOX 2 & BOX 3 - - - - - - */
+
+
+
+/* - - - - - - DONUT - - - - - - */
+.donut-1, .donut-2 {
+	width: 45%;
+	height: 45%;
+	margin-left: 15px;
+	margin-top: 10px;
+	position: relative;
+	float: left;
+}
+
+.donut-legend .legend-scale ul {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+}
+	    
+.donut-legend .legend-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 60px;
+    line-height: 18px;
+    margin-bottom: 2px;
+}
+    
+.donut-legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 16px;
+    margin-right: 5px;
+    margin-left: 0;
+} 
+/* - - - - - - DONUT - - - - - - */
+
+
+
+/* - - - - - - BOX 4 - - - - - - */
+.box4 {
+	background-color: #FFFFFF;
+	height: 250px;
+	border-radius: 5px;
+	padding: 5px;
+	box-shadow: 8px 8px 12px #BFBFBF;
+}
+
+.fuel-chart {
+	width: 90%;
+	height: 80%;
+}
+/* - - - - - - BOX 4 - - - - - - */
+
+
+
+/* - - - - - - BOX 5 - - - - - - */
+.box5 {
+	background-color: #FFFFFF;
+	height: 250px;
+	border-radius: 5px;
+	padding: 5px;
+	box-shadow: 8px 8px 12px #BFBFBF;
+}
+
+.speed-chart {
+	width: 90%;
+	height: 80%;
+}
+/* - - - - - - BOX 5 - - - - - - */
+
+
+
+/* - - - - - - BOX 6 - - - - - - */
+.box6 {
+	background-color: #FFFFFF;
+	height: 240px;
+	border-radius: 5px;
+	padding: 5px;
+	box-shadow: 8px 8px 12px #BFBFBF;
+}
+
+.activity-chart {
+	width: 90%;
+	height: 80%;
+}
+/* - - - - - - BOX 6 - - - - - - */
+
+
+
+
+
+/* - - - - - - MEDIA QUERIES - - - - - - */
+@media only screen and (min-width: 425px) and (max-width: 759px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		margin: 15px;
+	}
+
+
+
+	.box1 {
+		height: 140px;
+	}
+	.klok {	
+	  text-align: center;
+	  font-size: 30px; 
+	  margin: 10px;
+	  margin-left: 18px;
+	  display: block;
+	  font-family: Proxima Nova;
+	  width: 90%;
+	}	
+
+
+
+	.box2, .box3 {
+		min-height: 240px;
+		padding: 5px;
+	}
+
+
+
+	.box4, .box5, .box6 {
+		height: 260px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding: 5px;
+	}
+
+
+
+	.donut-1, .donut-2 {
+		width: 40%;
+		height: 40%;
+		margin-left: 15px;
+		margin-top: 10px;
+		position: relative;
+		float: left;
+	}
+	.donut-legend .legend-scale ul {
+	    margin-top: 40px;
+	    margin-bottom: 5px;
+	    padding: 0;
+	    float: left;
+	    list-style: none;
+	}	    
+	.donut-legend .legend-scale ul li {
+	    font-size: 0.9em;
+	    list-style: none;
+	    margin-left: 60px;
+	    line-height: 18px;
+	    margin-bottom: 2px;
+	}	    
+	.donut-legend ul.legend-labels li span {
+	    display: block;
+	    float: left;
+	    height: 16px;
+	    width: 16px;
+	    margin-right: 5px;
+	    margin-left: 0;
+	}
+
+	.line-chart {
+	 	animation: fadeIn 600ms cubic-bezier(0.57, 0.25, 0.65, 1) 1 forwards;
+	 	opacity: 0;
+	 	max-height: 80%;
+	 	width: 90%;
+	}
+	.aspect-ratio {
+		height: 0;
+		margin-top: 20px;
+		margin-left: 18px;
+		width: 90%;
+		padding-bottom: 20%;
+	}
+	@keyframes fadeIn {
+		to {
+			opacity: 1;
+		}
+	}
+
+
+	.fuel-chart {
+		width: 90%;
+		height: 80%;
+	}
+
+
+	.speed-chart {
+		width: 90%;
+		height: 80%;
+	}
+
+
+	.activity-chart {
+		width: 90%;
+		height: 80%;
+	}
+}	
+
+
+
+
+
+
+
+@media only screen and (min-width: 760px) and (max-width: 980px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		margin: 15px;
+	}
+
+	.box1 {
+		height: 230px;
+	}	
+
+	.klok {	
+	  text-align: center;
+	  font-size: 40px; 
+	  margin: 15% 5% 15% 5%;
+	  display: block;
+	  font-family: Proxima Nova;
+	  width: 90%;
+	}	
+
+	.box2, .box3 {
+		min-height: 230px;
+	}
+
+	.box4, .box5, .box6 {
+		height: 230px;
+	}
+
+	/* - - - - - - DONUT - - - - - - */
+	.donut-1, .donut-2 {
+		width: 40%;
+		height: 40%;
+		margin-left: 10%;
+		position: relative;
+		float: left;
+	}
+
+	.donut-legend .legend-scale ul {
+	    margin-top: 10%;
+	    margin-bottom: 5%;
+	    padding: 0;
+	    float: left;
+	    list-style: none;
+	}
+	    
+	.donut-legend .legend-scale ul li {
+	    font-size: 80%;
+	    list-style: none;
+	    margin-left: 50px;
+	    line-height: 18px;
+	    margin-bottom: 2px;
+	}
+	    
+	.donut-legend ul.legend-labels li span {
+	    display: block;
+	    float: left;
+	    height: 16px;
+	    width: 16px;
+	    margin-right: 5px;
+	    margin-left: 0;
+	}
+	/* - - - - - - DONUT - - - - - - */
+
+	.line-chart {
+	 	animation: fadeIn 600ms cubic-bezier(0.57, 0.25, 0.65, 1) 1 forwards;
+	 	opacity: 0;
+	 	max-height: 90%;
+	 	width: 90%;
+	}
+	.aspect-ratio {
+		height: 0;
+		margin-top: 5%;
+		margin-left: 18px;
+		width: 90%;
+		margin-bottom: 20%;
+	}
+	
+	@keyframes fadeIn {
+		to {
+			opacity: 1;
+		}
+	}
+
+	.fuel-chart {
+		width: 90%;
+		height: 80%;
+	}
+
+
+	.speed-chart {
+		width: 90%;
+		height: 80%;
+	}
+	
+
+	.activity-chart {
+		width: 90%;
+		height: 80%;
+	}
+}
+
+	
+@media only screen and (min-width: 980px) and (max-width: 1300px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		margin: 15px;
+	}
+
+
+	.box1, .box2, .box3, .box4, .box5 {
+		height: 210px;
+	}
+
+	.klok {
+		font-size: 2.2em;
+		margin: 15% 5% 15% 5%;
+
+	}
+
+	.donut-1, .donut-2 {
+		width: 38%; 
+		height: 38%;
+		margin-top: 0;
+		margin-left: 10px;
+		padding: 0;
+
+	}
+
+	.box6 {
+		height: 448px;
+	}
+
+	.fuel-chart {
+		width: 90%;
+		height: 80%;
+	}
+
+
+	.speed-chart {
+		width: 90%;
+		height: 80%;
+	}
+	
+
+	.activity-chart {
+		width: 90%;
+		height: 80%;
+	}
+	
+	
+
+}	
+
+@media only screen and (min-width: 1300px) and (max-width: 2000px) {
+
+	.box1, .box2, .box3, .box4, .box5 {
+		height: 230px;
+	}
+
+	.klok {
+		font-size: 2em;
+		margin-top: 30px;
+
+	}
+
+	.donut-1, .donut-2 {
+		width: 38%; 
+		height: 38%;
+		margin-top: 0;
+		margin-left: 10px;
+		padding: 0;
+
+	}
+
+	.box6 {
+		height: 480px;
+	}
+
+	.fuel-chart {
+		width: 90%;
+		height: 80%;
+	}
+
+
+	.speed-chart {
+		width: 90%;
+		height: 80%;
+	}
+	
+
+	.activity-chart {
+		width: 90%;
+		height: 80%;
+	}
+	
+
+}
+/* - - - - - - MEDIA QUERIES - - - - - - */
+
+
+
+

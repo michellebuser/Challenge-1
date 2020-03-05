@@ -1,0 +1,105 @@
+.grid-container {
+	display: grid;
+	min-height: 800px;
+	grid-gap: 15px;
+	grid-template-areas: 
+			"title"
+			"main1"
+			"main2"
+			"main3"
+			"main4"
+			"main5"
+			"main6"
+}
+
+.dashboard {
+	grid-area: title;
+}
+
+.box1 {
+	grid-area: main1;
+}
+
+.box2 {
+	grid-area: main2;
+}
+
+.box3 {
+	grid-area: main3;
+}
+
+.box4 {
+	grid-area: main4;
+}
+
+.box5 {
+	grid-area: main5;
+}
+
+.box6 {
+	grid-area: main6;
+}
+
+
+/* ------ MEDIA QUERIES ------ */
+
+@media only screen and (min-width: 425px) and (max-width: 759px) {
+	.grid-container {
+		display: grid;
+		min-height: 800px;
+		grid-gap: 10px;
+		grid-template-areas: 
+				"title"
+				"main1"
+				"main2"
+				"main3"
+				"main4"
+				"main5"
+				"main6"
+					
+	}
+
+}
+
+@media only screen and (min-width: 760px) and (max-width: 980px) {
+	.grid-container {
+		display: grid;
+		min-height: 800px;
+		grid-gap: 10px;
+		grid-template-areas: 
+				"title title"
+				"main1 main2"
+				"main3 main4"
+				"main5 main6"
+	}
+
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1300px) {
+	.grid-container {
+		display: grid;
+		min-height: 800px;
+		grid-gap: 10px;
+		grid-template-areas:
+				"title title title" 
+				"main1 main2 main3"
+				"main4 main6 main6"
+				"main5 main6 main6"
+	}
+	
+
+}	
+
+@media only screen and (min-width: 1300px) and (max-width: 2000px) {
+	.grid-container {
+		display: grid;
+		min-height: 800px;
+		grid-gap: 10px;
+		grid-template-areas: 
+				"title title title"
+				"main1 main2 main3"
+				"main4 main6 main6"
+				"main5 main6 main6"
+	}	
+
+}

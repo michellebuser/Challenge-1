@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="opmaak.css">
+	<link rel="stylesheet" type="text/css" href="grid-indeling.css">
+	<script src="interactie.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+	<title>Dashboard</title>
+</head>
+<body>
+	<header>
+		<div class="hamburger-menu" onclick="myFunction(this)">
+	 		<div class="bar1"></div>
+	  		<div class="bar2"></div>
+	  		<div class="bar3"></div>
+		</div>
+	</header>
+
+	<main class="grid-container">
+		<h1 class="dashboard">Dashboard</h1>
+		<section class="grid-item box1">
+			<p class="title">Resting time to Mars</p>
+			<hr />
+			<p class="klok" id="klok"></p>			
+		</section>
+
+		<section class="grid-item box2">
+			<p class="title">Food</p>
+			<hr />
+			<span class="donut-1">
+				<canvas id="food"></canvas>
+			</span>
+			<span class="donut-legend">
+				<span class="legend-scale">
+					<ul class="legend-labels">
+						<li><span style='background:#011936;'></span>Bread</li>
+						<li><span style='background:#465362;'></span>Sandwiches</li>
+						<li><span style='background:#82A3A1;'></span>Snacks</li>
+						<li><span style='background:#9FC490;'></span>Fruits</li>
+						<li><span style='background:#C0DFA1;'></span>Other</li>
+					</ul>
+			  </span>
+			</span>
+		</section>
+
+		<section class="grid-item box3">
+			<p class="title">Drinks</p>	
+			<hr />	
+			<span class="donut-2">
+				<canvas id=drink></canvas>				
+			</span>	
+			<span class="donut-legend">
+				<span class="legend-scale">
+					<ul class="legend-labels">
+						<li><span style='background:#2F242C;'></span>Water</li>
+			      		<li><span style='background:#502274;'></span>Juices</li>
+			      		<li><span style='background:#A42CD6;'></span>Smoothies</li>
+			 		    <li><span style='background:#C179B9;'></span>Alcohol</li>
+			      		<li><span style='background:#EEB4B3;'></span>Other</li>						
+					</ul>					
+				</span>
+			</span>
+		</section>
+
+		<section class="grid-item box4">
+			<p class="title">Fuel</p>
+			<hr />
+			<canvas class="fuel-chart" id="fuel-chart"></canvas>			
+		</section>
+
+		<section class="grid-item box5">
+			<p class="title">Speed</p>
+			<hr />
+			<canvas class="speed-chart" id="speed-chart"></canvas>			
+		</section>
+
+		<section class="grid-item box6">
+			<p class="title">Activities</p>
+			<hr />
+			<canvas class="activity-chart" id="bar-chart" ></canvas>					
+		</section>		
+	</main>
+</body>
+</html>
+
+<script type="text/javascript" src="Food Pie Chart.js"></script> <!-- Dit is de verwijzing naar de JavaScript van de piechart -->
+<script type="text/javascript" src="Drink Pie Chart.js"></script> <!-- Dit is de verwijzing naar de JavaScript van de piechart -->
+<script type="text/javascript" src="Fuel Line Chart.js"></script> <!-- Dit is de verwijzing naar de JavaScript van de linechart -->
+<script type="text/javascript" src="Speed Line Chart.js"></script> <!-- Dit is de verwijzing naar de JavaScript van de linehart -->
+<script type="text/javascript" src="Bar Chart.js"></script> <!-- Dit is de verwijzing naar de JavaScript van de barchart -->
+
+
+
